@@ -1,9 +1,10 @@
-import Board from './lib/Board'
+import { Board, boardToString, fillBoard } from './lib/board'
+import { solve } from './lib/solver'
 
-const b = new Board;
-b.setCells(
+const b = new Board()
+fillBoard(b,
   '956      ',
-  ' 3   826 ',
+  '437158269',
   ' 8  463 7',
   '6  28    ',
   '5  7  48 ',
@@ -12,5 +13,6 @@ b.setCells(
   '8 1  372 ',
   '729   6  '
 );
-b.print();
-b.solve();
+
+console.log(boardToString(b));
+solve(b);
