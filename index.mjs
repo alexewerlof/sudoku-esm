@@ -4,7 +4,7 @@ import { solve } from "./lib/solver";
 const b = new Board();
 fillBoard(b,
   "956      ",
-  "43       ",
+  "437158269",
   " 8  463 7",
   "6  28    ",
   "5  7  48 ",
