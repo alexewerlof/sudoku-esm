@@ -11,6 +11,9 @@
             "runtimeArgs": [
                 "--experimental-modules"
             ],
+            "skipFiles": [
+                "<node_internals>/**/*.js"
+            ],
             "program": "${workspaceFolder}/index.mjs"
         }
     ]

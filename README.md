@@ -1,3 +1,5 @@
+![](./screenshot.png)
+
 # Install
 
 1. Clone it `git@github.com:userpixel/sudoku.git`
