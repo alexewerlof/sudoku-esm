@@ -8,13 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
+            "program": "${workspaceFolder}/index.mjs",
             "runtimeArgs": [
                 "--experimental-modules"
-            ],
-            "skipFiles": [
-                "<node_internals>/**/*.js"
-            ],
-            "program": "${workspaceFolder}/index.mjs"
+            ]
         }
     ]
 }
