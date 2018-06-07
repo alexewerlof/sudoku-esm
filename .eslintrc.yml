@@ -1,0 +1,13 @@
+
+parserOptions:
+  sourceType: module
+
+env:
+  es6: yes
+  node: yes
+
+extends: eslint:recommended
+
+rules:
+  no-console: off
+
