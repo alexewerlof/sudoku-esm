@@ -1,9 +1,8 @@
-import { Board, boardToString, fillBoard } from './lib/board.mjs';
+import { Board, boardToString } from './lib/board.mjs';
 import { solve } from './lib/solver.mjs';
 
 const b = new Board();
-fillBoard(
-  b,
+b.fill(
   '956      ',
   '        5',
   // ' 8  463 7',
