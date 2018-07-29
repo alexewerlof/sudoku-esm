@@ -41,8 +41,18 @@ const sixSolution =  '95612 3 8' +
 '847916532' +
 '692453781'
 
+const lotsSolution =  '95612 3 8' +
+'1   78469' +
+'         ' +
+'         ' +
+'         ' +
+'         ' +
+'         ' +
+'8479    2' +
+'69       '
+
 const b = new Board(
-  sixSolution
+  lotsSolution
 );
 
 console.log('Starting with:')
