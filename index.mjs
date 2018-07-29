@@ -15,5 +15,11 @@ const b = new Board(
   '      6  '
 );
 
-console.log(b.toString(b));
-solve(b);
+console.log('Starting with:')
+console.log(b.toString())
+console.time('computation');
+const answerBoards = solve(b);
+console.timeEnd('computation')
+console.log(`Found ${answerBoards.length} answers:`)
+answerBoards.forEach(answerBoard => console.log(`${answerBoard}`))
+console.log('Done!')
