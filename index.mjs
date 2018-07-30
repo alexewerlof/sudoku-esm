@@ -51,6 +51,8 @@ const lotsSolution =  '95612 3 8' +
 '8479    2' +
 '69       '
 
+const solvedSolution = '956124378132578469784693521579862143468319257321457896215786934847935612693241785'
+
 const b = new Board(
   lotsSolution
 );
