@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node --experimental-modules .",
     "perf": "node --inspect --experimental-modules perf.mjs",
-    "inspect": "node --inspect-brk --experimental-modules index.mjs",
+    "inspect": "node --inspect-brk --experimental-modules perf.mjs",
     "lint": "eslint **/*.mjs",
     "lint:fix": "eslint **/*.mjs --fix"
   },
