@@ -12,6 +12,15 @@
             "runtimeArgs": [
                 "--experimental-modules"
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Tests",
+            "program": "${workspaceFolder}/test.mjs",
+            "runtimeArgs": [
+                "--experimental-modules"
+            ]
         }
     ]
 }
