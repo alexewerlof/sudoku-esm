@@ -1,35 +1,5 @@
 import { Board } from './lib/board.mjs';
-import { solve } from './lib/solver.mjs';
-
-const noSolution = '516849732' +
-'3 76 5   ' +
-'8 97   65' +
-'135 6 9 7' +
-'472591  6' +
-'96837  5 ' +
-'253186 74' +
-'6842 75  ' +
-'791 5 6 8'
-
-const oneSolution =  '95612 3 8' +
-'123578469' +
-'478369125' +
-'214635897' +
-'         ' +
-'3        ' +
-'531287946' +
-'847916532' +
-'692453781'
-
-const twoSolution =  '95612 3 8' +
-'123578469' +
-'478369125' +
-'214635897' +
-'         ' +
-'         ' +
-'531287946' +
-'847916532' +
-'692453781'
+import { solve } from './lib/solver.mjs'
 
 const sixSolution =  '95612 3 8' +
 '123578469' +
@@ -41,24 +11,11 @@ const sixSolution =  '95612 3 8' +
 '847916532' +
 '692453781'
 
-const lotsSolution =  '95612 3 8' +
-'1   78469' +
-'         ' +
-'         ' +
-'         ' +
-'         ' +
-'         ' +
-'8479    2' +
-'69       '
-
-const solvedSolution = '956124378132578469784693521579862143468319257321457896215786934847935612693241785'
-
 const b = new Board(
-  lotsSolution
+  sixSolution
 );
 
-console.log('Starting with:')
-console.log(b.toString())
+console.log(`Starting with:\n${b}`)
 console.time('computation');
 const answerBoards = solve(b, 3);
 console.timeEnd('computation')
