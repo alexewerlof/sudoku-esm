@@ -7,8 +7,17 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Run index",
             "program": "${workspaceFolder}/index.mjs",
+            "runtimeArgs": [
+                "--experimental-modules"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run tests",
+            "program": "${workspaceFolder}/tests.mjs",
             "runtimeArgs": [
                 "--experimental-modules"
             ]

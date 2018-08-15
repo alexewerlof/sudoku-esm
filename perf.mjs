@@ -15,6 +15,9 @@ const b = new Board(
   lotsSolution
 );
 
-console.time('computation');
-solve(b, 100000);
-console.timeEnd('computation')
+const iterations = 3
+for (let i = 1; i <= iterations; i++) {
+  console.time(`iteration ${i}`)
+  solve(b, 100000)
+  console.timeEnd(`iteration ${i}`)
+}
