@@ -8,14 +8,13 @@
     "perf": "node --inspect --experimental-modules perf.mjs",
     "inspect": "node --inspect-brk --experimental-modules perf.mjs",
     "lint": "eslint **/*.mjs",
-    "lint:fix": "eslint **/*.mjs --fix"
+    "lint:fix": "eslint **/*.mjs --fix",
+    "test": "node --experimental-modules tests.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "mocha": "^5.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
