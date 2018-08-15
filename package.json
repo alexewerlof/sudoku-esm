@@ -9,7 +9,7 @@
     "inspect": "node --inspect-brk --experimental-modules perf.mjs",
     "lint": "eslint **/*.mjs",
     "lint:fix": "eslint **/*.mjs --fix",
-    "test": "node --experimental-modules test.mjs"
+    "test": "node --experimental-modules tests.mjs"
   },
   "keywords": [],
   "author": "",
