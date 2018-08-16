@@ -1,8 +1,8 @@
 # Install
 
-1. Clone it `git@github.com:userpixel/sudoku.git`
-2. Install NPM dependencies `npm i`
-3. Run `npm start` to see 3 solutions to a sample board
+1. Clone it `$ git clone git@github.com:userpixel/sudoku-esm.git && cd sudoku-esm`
+2. Install NPM dependencies `$ npm i`
+3. Run `$ npm start` to see 3 solutions to a sample board
 
 # Debug in VS Code
 
