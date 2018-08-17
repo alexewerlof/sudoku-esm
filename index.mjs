@@ -20,5 +20,5 @@ console.time('computation');
 const answerBoards = solve(b, 3);
 console.timeEnd('computation')
 console.log(`Found ${answerBoards.length} answers:`)
-answerBoards.forEach(answerBoard => console.log(`${answerBoard}Valid: ${answerBoard.isValid()}\n`))
+answerBoards.forEach(answerBoard => console.log(`${answerBoard}\n`))
 console.log('Done!')
