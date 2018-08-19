@@ -26,6 +26,5 @@ async function runTestFiles(...fileNames) {
 
 runTestFiles(
   './lib/utils.spec.mjs',
-  './lib/board.spec.mjs',
   './lib/solver.spec.mjs',
 ).then(console.log, console.error)
