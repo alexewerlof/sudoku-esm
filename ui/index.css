@@ -1,0 +1,42 @@
+table.board {
+  font-size: 40px;
+  border-spacing: 0;
+}
+
+td {
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+}
+
+.undecided {
+  font-size: 0.3em;
+}
+
+.n-1 { color: red }
+.n-2 { color: green }
+.n-3 { color: palevioletred }
+.n-4 { color: cadetblue }
+.n-5 { color: blue }
+.n-6 { color: blueviolet }
+.n-7 { color: tomato }
+.n-8 {color: #339970;}
+.n-9 { color: violet }
+
+td:first-child {
+  border-left: 2px solid black;
+}
+
+td:nth-child(3n) {
+  border-right: 2px solid black;
+}
+
+tr:first-child td {
+  border-top: 2px solid black;
+}
+
+tr:nth-child(3n) td {
+  border-bottom: 2px solid black;
+}
