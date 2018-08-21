@@ -1,20 +1,21 @@
 import { solve } from './lib/solver.mjs'
 import { boardToString } from './lib/utils'
 
-const sixSolution =  '95612 3 8' +
-'123578469' +
-'478369125' +
-'214635897' +
-'         ' +
-'         ' +
-'531   946' +
-'847916532' +
-'692453781'
+const hardBoard = 
+  ' 7 4   92' +
+  '    8   5' +
+  '  3   7  ' +
+  '       8 ' +
+  '  7 1 5 4' +
+  '   237   ' +
+  '2 4  5  3' +
+  '         ' +
+  '8 5   1  '
 
-console.log(`Starting with:\n${boardToString(sixSolution)}`)
+console.log(`Starting with:\n${boardToString(hardBoard)}`)
 console.time('computation');
-const answerBoards = solve(sixSolution, 3);
+const answerBoards = solve(hardBoard, 1);
 console.timeEnd('computation')
 console.log(`Found ${answerBoards.length} answers:`)
-answerBoards.forEach(answerBoard => console.log(boardToString(answerBoard)))
+console.log(boardToString(answerBoards[0]))
 console.log('Done!')
