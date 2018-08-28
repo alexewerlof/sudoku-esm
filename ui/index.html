@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Sudoku ESM</title>
+</head>
+<body>
+  <div id="app">
+      <table class="board">
+        <tr v-for="row in 9">
+          <template v-for="col in 9">
+            <td v-if="isUncertainCell(col, row)">
+              <template v-for="p in getPossibilities(col, row)">
+                <span class="undecided" :class="'n-' + p">{{p}}</span>
+              </template>
+            </td>
+            <td v-else>
+              {{getCellStr(col, row)}}
+            </td>
+          </template>
+        </tr>
+      </table>
+      <table>
+        <tr v-for="(freq, ch) in getStats()">
+          <th>{{ch}}</th>
+          <td>{{freq}}</td>
+        </tr>
+      </table>
+  </div>
+  <script type="module" src="index.mjs"></script>
+</body>
+</html>
