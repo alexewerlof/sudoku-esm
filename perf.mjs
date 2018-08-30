@@ -167,10 +167,13 @@ const puzzles = [
 
 
 console.time(`total time`)
+console.profile('solving');
 puzzles.forEach((puzzle, i) => {
   console.time(`iteration ${i}`)
+  console.timeStamp(`iteration ${i}`)
   solve(puzzle)
   console.timeEnd(`iteration ${i}`)
 })
+console.profileEnd('solving')
 console.log('---------------------')
 console.timeEnd(`total time`)
