@@ -171,7 +171,7 @@ console.profile('solving');
 puzzles.forEach((puzzle, i) => {
   console.time(`iteration ${i}`)
   console.timeStamp(`iteration ${i}`)
-  solve(puzzle)
+  solve(puzzle, 1)
   console.timeEnd(`iteration ${i}`)
 })
 console.profileEnd('solving')
